@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/lp-miniapp/',
+  base: '/alp-miniapp/',
   build: {
     outDir: 'dist',
     sourcemap: false,
