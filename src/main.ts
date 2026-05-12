@@ -2,11 +2,22 @@ import './styles/tokens.css';
 import './styles/base.css';
 import './styles/components.css';
 
-const app = document.querySelector<HTMLDivElement>('#app');
-if (app) {
-  app.innerHTML = `
-    <div class="placeholder">
-      <p class="muted">prorab.ai — миниапка собирается. UI приедет в фазе 6+.</p>
-    </div>
-  `;
-}
+import { bootWebApp } from './telegram';
+import { registerView, startRouter } from './router';
+import { homeView } from './views/home';
+import { whoView } from './views/who';
+import { includedView } from './views/included';
+import { optionsView } from './views/options';
+import { demoView } from './views/demo';
+import { contactView } from './views/contact';
+
+bootWebApp();
+
+registerView('home', homeView);
+registerView('who', whoView);
+registerView('included', includedView);
+registerView('options', optionsView);
+registerView('demo', demoView);
+registerView('contact', contactView);
+
+startRouter();
