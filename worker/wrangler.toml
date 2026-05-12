@@ -1,7 +1,7 @@
 name = "prorab-leads"
 main = "src/index.ts"
 compatibility_date = "2026-05-12"
-account_id = ""  # fill in after wrangler login
+account_id = "05109483c9aef652e30995ff8554e69a"
 
 # secrets (set via `wrangler secret put`):
 #   BOT_TOKEN     — Telegram bot API token from @BotFather
