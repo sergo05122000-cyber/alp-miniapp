@@ -1,0 +1,17 @@
+name = "prorab-leads"
+main = "src/index.ts"
+compatibility_date = "2026-05-12"
+account_id = ""  # fill in after wrangler login
+
+# secrets (set via `wrangler secret put`):
+#   BOT_TOKEN     — Telegram bot API token from @BotFather
+#   ADMIN_CHAT_ID — Telegram chat id to receive leads (Серёга @and_sergey id)
+
+[vars]
+ALLOWED_ORIGINS = "https://qwwiwi.github.io,http://localhost:5173,http://localhost:5174"
+MIN_AUTH_DATE_SECONDS = "86400"
+
+# Optional KV for rate-limiting (uncomment after creating):
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT"
+# id = ""
